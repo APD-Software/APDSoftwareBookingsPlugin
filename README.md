@@ -9,8 +9,9 @@ Do not edit `dist/` by hand; every publish overwrites it.
 - Pinned (use this on live sites): `https://cdn.jsdelivr.net/gh/APD-Software/APDSoftwareBookingsPlugin@v0.1.0/dist/bookings-plugin-loader.js`
 
 ```html
-<div id="bookings"></div>
+<div data-apdsoftware-bookings data-api-base-url="https://<your-host>/api"></div>
 <script type="module" src="https://cdn.jsdelivr.net/gh/APD-Software/APDSoftwareBookingsPlugin@v0.1.0/dist/bookings-plugin-loader.js"></script>
 ```
 
-Global API: `window.APDSoftwareBookingsPlugin` (`configure()`, `mount()`, `unmount()`, `open()`).
+Global API: `window.APDSoftwareBookingsPlugin` (`configure()`, `mount()`, `unmount()`, `autoMount()`, `open()`).
+Full embed options: `APDSoftware.Frontend.Bookings.Next/README.md` in the private repository.
